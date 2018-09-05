@@ -20,7 +20,7 @@ import org.openqa.selenium.support.PageFactory;
 public class GoogleStartPageTest {
 
 	private WebDriver driver;
-/	/*
+	/*
 	@FindBy(id = "testTextField")
 	private WebElement textField;
 
