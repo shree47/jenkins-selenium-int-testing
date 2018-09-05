@@ -47,7 +47,7 @@ public class GoogleStartPageTest {
 				
 	}
 
-	@Test
+	/*@Test
 	public void textBoxuiAreaMatch() throws MalformedURLException {
 
 		String testTextField = driver.findElement(By.id("testTextField")).getText();;
@@ -60,6 +60,6 @@ public class GoogleStartPageTest {
 		WebElement button = driver.findElement(By.id("testButton"));
 		button.click();
 	
-	}
+	}*/
 	
 }
