@@ -55,6 +55,11 @@ public class GoogleStartPageTest {
 		assertTrue(testTextField!=testLabel);	
 	}
 	
+	@Test
+	public void textBoxuiAreaPopUp() throws MalformedURLException {
+		WebElement button = driver.findElement(By.id("testButton"));
+		button.click();
 	
+	}
 	
 }
