@@ -39,9 +39,7 @@ public class GoogleStartPageTest {
 		DesiredCapabilities capability = DesiredCapabilities.chrome();
 		URL gridUrl = new URL(gridServerUrl);
 		driver = new RemoteWebDriver(gridUrl, capability);
-		driver.get("https://samplep20
-			   
-			   00474034trial.hanatrial.ondemand.com/explore-ui5/");
+		driver.get("https://samplep2000474034trial.hanatrial.ondemand.com/explore-ui5/");
 	}
 	@After
 	public void tearDownWebDriver() {
