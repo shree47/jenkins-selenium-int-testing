@@ -1,5 +1,7 @@
 
 
+
+
 package de.mb.selenium;
 
 import static org.junit.Assert.assertTrue;
@@ -22,6 +24,15 @@ public class GoogleStartPageTest {
 
 	private WebDriver driver;
 
+	@FindBy(id = "testTextField")
+	private WebElement textField;
+
+	@FindBy(id = "testButton")
+	private WebElement button;
+
+	@FindBy(id = "testLabel")
+	private WebElement label;
+	
 	@Before
 	public void setUp() throws MalformedURLException {
 		String serverUrl = System.getProperty("grid.server.url");		String gridServerUrl = "http://seleniumhub:4444/wd/hub";
@@ -60,14 +71,7 @@ public class GoogleStartPageTest {
 	
 	@Test
 	public void textBoxuiPopUp() throws MalformedURLException {
-		@FindBy(id = "testTextField")
-		private WebElement textField;
-
-		@FindBy(id = "testButton")
-		private WebElement button;
-
-		@FindBy(id = "testLabel")
-		private WebElement label;
+		
 		
 		webDriver.get(applicationUrl + "/");
 		PageFactory.initElements(webDriver, this);
