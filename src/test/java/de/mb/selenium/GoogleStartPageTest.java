@@ -20,15 +20,7 @@ import org.openqa.selenium.support.PageFactory;
 public class GoogleStartPageTest {
 
 	private WebDriver driver;
-	/*
-	@FindBy(id = "testTextField")
-	private WebElement textField;
-
-	@FindBy(id = "testButton")
-	private WebElement button;
-
-	@FindBy(id = "testLabel")
-	private WebElement label;*/
+	
 	
 	@Before
 	public void setUp() throws MalformedURLException {
@@ -63,15 +55,6 @@ public class GoogleStartPageTest {
 		assertTrue(testTextField!=testLabel);	
 	}
 	
-	@Test
-	public void textBoxuiPopUp() throws MalformedURLException {
-		
-		
-		webDriver.get(applicationUrl + "/");
-		PageFactory.initElements(webDriver, this);
-		
-		//button.click();
-		
-	}	
+	
 	
 }
