@@ -1,3 +1,4 @@
+
 package de.mb.selenium;
 
 import static org.junit.Assert.assertTrue;
@@ -43,5 +44,12 @@ public class GoogleStartPageTest {
 		assertTrue(bodyText != null);
 	}
 
+	public void textBoxuiAreaMatch() throws MalformedURLException {
+
+		String testTextField = driver.findElement(By.id("testTextField")).getText();
+		String testLabel = driver.findElement(By.id("testLabel")).getText();
+		assertTrue(testTextField!=testLabel);	
+
+	}
 
 }
