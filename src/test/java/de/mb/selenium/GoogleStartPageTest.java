@@ -1,7 +1,4 @@
 
-
-
-
 package de.mb.selenium;
 
 import static org.junit.Assert.assertTrue;
@@ -23,7 +20,7 @@ import org.openqa.selenium.support.PageFactory;
 public class GoogleStartPageTest {
 
 	private WebDriver driver;
-
+/	/*
 	@FindBy(id = "testTextField")
 	private WebElement textField;
 
@@ -31,7 +28,7 @@ public class GoogleStartPageTest {
 	private WebElement button;
 
 	@FindBy(id = "testLabel")
-	private WebElement label;
+	private WebElement label;*/
 	
 	@Before
 	public void setUp() throws MalformedURLException {
@@ -46,7 +43,6 @@ public class GoogleStartPageTest {
 			   
 			   00474034trial.hanatrial.ondemand.com/explore-ui5/");
 	}
-
 	@After
 	public void tearDownWebDriver() {
 		driver.quit();
@@ -76,7 +72,7 @@ public class GoogleStartPageTest {
 		webDriver.get(applicationUrl + "/");
 		PageFactory.initElements(webDriver, this);
 		
-		button.click();
+		//button.click();
 		
 	}	
 	
