@@ -45,7 +45,7 @@ public class GoogleStartPageTest {
 		
 		String testTextField = driver.findElement(By.id("testTextField")).getText();
 		String testLabel = driver.findElement(By.id("testLabel")).getText();
-		assertTrue(testTextField!=testLabel);	
+		assertTrue(testTextField==testLabel);	
 		
 	}
 
