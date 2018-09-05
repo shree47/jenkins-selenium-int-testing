@@ -29,7 +29,7 @@ public class GoogleStartPageTest {
 		DesiredCapabilities capability = DesiredCapabilities.chrome();
 		URL gridUrl = new URL(gridServerUrl);
 		driver = new RemoteWebDriver(gridUrl, capability);
-		//driver.get("https://samplep2000474034trial.hanatrial.ondemand.com/explore-ui5/");
+		driver.get("https://samplep2000474034trial.hanatrial.ondemand.com/explore-ui5/");
 	}
 
 	@After
@@ -39,17 +39,16 @@ public class GoogleStartPageTest {
 
 
 	@Test
-	/*public void pageBodyIsNotNull() throws MalformedURLException {
+	public void pageBodyIsNotNull() throws MalformedURLException {
 		String bodyText = driver.findElement(By.tagName("body")).getText();
 		assertTrue(bodyText != null);
-	}*/
+	}
 
 	public void textBoxuiAreaMatch() throws MalformedURLException {
 
 		String testTextField = driver.findElement(By.id("testTextField")).getText();
 		String testLabel = driver.findElement(By.id("testLabel")).getText();
 		assertTrue(testTextField!=testLabel);	
-
 	}
 
 }
