@@ -5,7 +5,7 @@ import static org.junit.Assert.assertTrue;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.concurrent.TimeUnit;
+
 
 import org.junit.After;
 import org.junit.Before;
@@ -53,7 +53,7 @@ public class GoogleStartPageTest {
 
 		String testTextField = driver.findElement(By.id("testTextField")).getText();;
 		String testLabel = driver.findElement(By.id("testLabel")).getText();
-		TimeUnit.SECONDS.sleep(1);
+		
 		assertTrue(testTextField!=testLabel);	
 	}
 	
