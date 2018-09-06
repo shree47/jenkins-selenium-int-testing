@@ -25,7 +25,8 @@ public class GoogleStartPageTest {
 	
 	@Before
 	public void setUp() throws MalformedURLException {
-		String serverUrl = System.getProperty("grid.server.url");		String gridServerUrl = "http://seleniumhub:4444/wd/hub";
+		String serverUrl = System.getProperty("grid.server.url");		
+		String gridServerUrl = "http://seleniumhub:4444/wd/hub";
 		if (serverUrl != null) {
 			gridServerUrl = serverUrl;
 		}
@@ -55,6 +56,7 @@ public class GoogleStartPageTest {
 	public void textBoxuiAreaMatch() throws MalformedURLException {
 
 		String testTextField = driver.findElement(By.id("testTextField")).getText();
+		driver.findElement(By.id("testTextField")).setText("Hope it works");
 		String testLabel = driver.findElement(By.id("testLabel")).getText();
 		 try {
            		 wait(500000);
