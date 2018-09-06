@@ -56,7 +56,8 @@ public class GoogleStartPageTest {
 	public void textBoxuiAreaMatch() throws MalformedURLException {
 
 		String testTextField = driver.findElement(By.id("testTextField")).getText();
-		driver.findElement(By.id("testTextField")).setText("Hope it works");
+		WebElement textField = driver.findElement(By.id("testTextField"));
+		
 		String testLabel = driver.findElement(By.id("testLabel")).getText();
 		 try {
            		 wait(500000);
