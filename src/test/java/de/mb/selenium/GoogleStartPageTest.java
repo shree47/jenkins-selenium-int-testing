@@ -61,7 +61,9 @@ public class GoogleStartPageTest {
 	public void textBoxuiAreaPopUp() throws MalformedURLException {
 		WebElement button = driver.findElement(By.id("testButton"));
 		button.click();
-		wait(2000);
+		 try {
+           		 wait(2000);
+        	} catch (Exception e) {}
 		//TimeUnit.SECONDS.sleep(1);
 	}
 	
