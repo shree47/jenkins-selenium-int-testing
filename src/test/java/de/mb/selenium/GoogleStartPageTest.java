@@ -45,6 +45,9 @@ public class GoogleStartPageTest {
 		
 		String bodyText = driver.findElement(By.tagName("body")).getText();
 		assertTrue(bodyText != null);
+		 try {
+           		 wait(10000);
+        	} catch (Exception e) {}
 				
 	}
 
@@ -53,6 +56,9 @@ public class GoogleStartPageTest {
 
 		String testTextField = driver.findElement(By.id("testTextField")).getText();
 		String testLabel = driver.findElement(By.id("testLabel")).getText();
+		 try {
+           		 wait(10000);
+        	} catch (Exception e) {}
 		
 		assertTrue(testTextField!=testLabel);	
 	}
