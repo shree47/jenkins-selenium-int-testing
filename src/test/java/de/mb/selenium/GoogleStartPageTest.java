@@ -62,7 +62,7 @@ public class GoogleStartPageTest {
 		WebElement button = driver.findElement(By.id("testButton"));
 		button.click();
 		 try {
-           		 wait(2000);
+           		 wait(5000);
         	} catch (Exception e) {}
 		//TimeUnit.SECONDS.sleep(1);
 	}
