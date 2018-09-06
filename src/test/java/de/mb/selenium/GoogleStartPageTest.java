@@ -5,6 +5,7 @@ import static org.junit.Assert.assertTrue;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 import org.junit.After;
 import org.junit.Before;
@@ -54,12 +55,12 @@ public class GoogleStartPageTest {
 		String testLabel = driver.findElement(By.id("testLabel")).getText();
 		assertTrue(testTextField!=testLabel);	
 	}
-	/*
+	
 	@Test
 	public void textBoxuiAreaPopUp() throws MalformedURLException {
 		WebElement button = driver.findElement(By.id("testButton"));
 		button.click();
-	
-	}*/
+		TimeUnit.SECONDS.sleep(1);
+	}
 	
 }
