@@ -63,7 +63,7 @@ public class GoogleStartPageTest {
 		WebElement textField = driver.findElement(By.id("testTextField"));
 		textField.sendKeys("shree-sap-java-web");
 		String testLabel = driver.findElement(By.id("testLabel")).getText();
-		System.out.println(testLabel+"shree");
+		System.out.println(testLabel);
 		 try {
            		 wait(500000);
         	} catch (Exception e) {}
