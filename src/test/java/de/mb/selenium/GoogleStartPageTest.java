@@ -44,9 +44,7 @@ public class GoogleStartPageTest {
 	@Test
 	public void pageBodyIsNotNull() throws MalformedURLException {
 		
-		 try {
-           		 wait(500000);
-        	} catch (Exception e) {}
+	
 		
 		String bodyText = driver.findElement(By.tagName("body")).getText();
 		assertTrue(bodyText != null);
@@ -59,16 +57,13 @@ public class GoogleStartPageTest {
 	@Test
 	public void textBoxuiAreaMatch() throws MalformedURLException {
 
-		 try {
-           		 wait(500000);
-        	} catch (Exception e) {}
-		
+		 
 		
 		String testTextField = driver.findElement(By.id("testTextField")).getText();
 		WebElement textField = driver.findElement(By.id("testTextField"));
 		textField.sendKeys("shree-sap-java-web");
 		String testLabel = driver.findElement(By.id("testLabel")).getText();
-		
+		System.out.println(testLabel+"shree");
 		 try {
            		 wait(500000);
         	} catch (Exception e) {}
@@ -79,9 +74,7 @@ public class GoogleStartPageTest {
 	@Test
 	public void textBoxuiAreaPopUp() throws MalformedURLException {
 		
-		 try {
-           		 wait(500000);
-        	} catch (Exception e) {}
+		
 		
 		WebElement button = driver.findElement(By.id("testButton"));
 		button.click();
