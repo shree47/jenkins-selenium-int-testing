@@ -78,9 +78,15 @@ public class GoogleStartPageTest {
 		System.out.println("3. Executing Pop up test");
 		WebElement button = driver.findElement(By.id("testButton"));
 		button.click();
-		WebElement okButton = driver.findElement(By.xpath("//*[contains(@id,'--btn-OK')]"));
+		/*WebElement okButton = driver.findElement(By.xpath("//*[contains(@id,'--btn-OK')]"));
 		String okButtonText = okButton.getText();
-		System.out.println(okButtonText);
+		System.out.println(okButtonText);*/
+		
+		WebElement popUpBoxSpan = driver.findElement(By.xpath("//*[contains(@id,'--msg')]"));
+		String popUpBoxSpanText = popUpBoxSpan.getText();
+		System.out.println(popUpBoxSpanText);
+		
+		
 		 try {
            		 wait(500000);
         	} catch (Exception e) {}
