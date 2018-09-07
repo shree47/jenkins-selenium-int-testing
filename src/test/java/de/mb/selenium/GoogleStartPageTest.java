@@ -76,6 +76,11 @@ public class GoogleStartPageTest {
 		
 		
 		System.out.println("3. Executing Pop up test");
+		
+		WebElement textField = driver.findElement(By.id("testTextField"));
+		textField.sendKeys("shree-sap-java-web");
+		String testTextField = textField.getText();
+		
 		WebElement button = driver.findElement(By.id("testButton"));
 		button.click();
 		/*WebElement okButton = driver.findElement(By.xpath("//*[contains(@id,'--btn-OK')]"));
@@ -86,10 +91,12 @@ public class GoogleStartPageTest {
 		String popUpBoxSpanText = popUpBoxSpan.getText();
 		System.out.println(popUpBoxSpanText);
 		
+		assertTrue(popUpBoxSpanText.contains(testTextField));
 		
-		 try {
+		
+		 /*try {
            		 wait(500000);
-        	} catch (Exception e) {}
+        	} catch (Exception e) {}*/
 		//TimeUnit.SECONDS.sleep(1);
 	}
 	
